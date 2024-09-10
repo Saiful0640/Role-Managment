@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C sharp\\Crude\\firstTime\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\c sharp\\crude\\firsttime\\firsttimewebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\c sharp\\crude\\firsttime\\firsttimewebapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\c sharp\\crude\\firsttime\\firsttimewebapi\\configmodel\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\configmodel\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\c sharp\\crude\\firsttime\\firsttimewebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\c sharp\\crude\\firsttime\\firsttimewebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\ConfigModel\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "FirstTimeWebAPI\\ConfigModel\\AppDbContext.cs",
+              "ToolTip": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\ConfigModel\\AppDbContext.cs",
+              "RelativeToolTip": "FirstTimeWebAPI\\ConfigModel\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T18:58:38.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "FirstTimeWebAPI\\Program.cs",
+              "ToolTip": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Program.cs",
+              "RelativeToolTip": "FirstTimeWebAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T12:44:14.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "FirstTimeWebAPI\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "FirstTimeWebAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T12:20:45.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "FirstTimeWebAPI\\Services\\UserService.cs",
+              "ToolTip": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Services\\UserService.cs",
+              "RelativeToolTip": "FirstTimeWebAPI\\Services\\UserService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T12:20:07.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "FirstTimeWebAPI\\Models\\User.cs",
+              "ToolTip": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Models\\User.cs",
+              "RelativeToolTip": "FirstTimeWebAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T12:19:52.546Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

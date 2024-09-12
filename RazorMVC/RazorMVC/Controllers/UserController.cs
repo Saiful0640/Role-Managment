@@ -122,5 +122,30 @@ namespace RazorMVC.Controllers
             return View(user);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            try
+            {
+                var result = await _userService.DeleteUser(id);
+
+                if (result)
+                {
+                    return RedirectToAction("GetAll");
+                }
+                else
+                {
+                    //return NotFound();
+                    return RedirectToAction("GetAll");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return View("GetAll");
+            }
+
+        }
+
     }
 }

@@ -60,7 +60,7 @@ namespace RazorMVC.Services
 
       public async Task<User> getuserById(int id)
        {
-            var response = await _httpClient.GetAsync($"api/user/{id}");
+            var response = await _httpClient.GetAsync($"api/User/{id}");
             if (response.IsSuccessStatusCode)
             {
                 return await response.Content.ReadFromJsonAsync<User>();
@@ -71,7 +71,30 @@ namespace RazorMVC.Services
                 throw new Exception($"Error retrieving user: {response.StatusCode} - {errorMessage}");
             }
 
+       }
+
+        public async Task<bool> DeleteUser(int id)
+        {
+            try
+            {
+                var response = await _httpClient.DeleteAsync($"api/User/{id}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
+
+
 
     }
 }

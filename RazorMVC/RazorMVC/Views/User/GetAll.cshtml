@@ -80,7 +80,7 @@
             </td>
             <td>
                 @Html.ActionLink("Edit", "EditUSer", new { id=item.Id }, new { @class = "btn btn-info" }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "GetUserById", new { id=item.Id }) |
                @*  @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }) *@
                <form asp-action="DeleteUser" asp-route-id="@item.Id" method="post" style="display:inline;">
                    <button type="submit" class="btn btn-danger">Delete</button>

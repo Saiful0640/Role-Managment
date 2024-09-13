@@ -1,4 +1,4 @@
-﻿@model RazorMVC.Models.User
+﻿@model RazorMVC.ViewModel.UserView
 
 @{
     ViewData["Title"] = "GetUserById";
@@ -7,7 +7,7 @@
 <h1>GetUserById</h1>
 
 <div>
-    <h4>User</h4>
+    <h4>UserView</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -46,12 +46,33 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.PhoneNumber)
         </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RoleId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RoleId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RoleName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RoleName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UserTypeId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserTypeId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UserTypeName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserTypeName)
+        </dd>
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Edit", "EditUSer", new { id = Model.Id }, new { @class = "btn btn-primary" }) |
-    <form asp-action="DeleteUser" asp-route-id="@Model.Id" method="post" style="display:inline;">
-        <button type="submit" class="btn btn-danger">Delete</button>
-    </form> |
+    @Html.ActionLink("Edit", "EditUSer", new { id = Model.Id }) |
     <a asp-action="GetAll">Back to List</a>
 </div>

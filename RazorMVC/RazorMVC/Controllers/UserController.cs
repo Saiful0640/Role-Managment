@@ -90,13 +90,21 @@ namespace RazorMVC.Controllers
         public async Task<IActionResult> EditUSer(int id)
         {
             var userById = await _userService.getuserById(id);
+            var role = await _userService.GetAllRole();
+            var userType = await _userService.GetAllUserType();
+            EditUserView editUserView = new EditUserView
+            {
+                UserView = userById,
+                Roles = role,
+                UserTypes = userType,
+            };
 
             if (userById == null) { 
                 return NotFound();
             }
             else
             {
-                return View("EditUSer", userById);
+                return View("EditUSer", editUserView);
             }
         }
 

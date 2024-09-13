@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\C sharp\\Crude\\firstTime\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\c sharp\\crude\\firsttime\\firsttimewebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\c sharp\\crude\\firsttime\\firsttimewebapi\\viewmodel\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\viewmodel\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\c sharp\\crude\\firsttime\\firsttimewebapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\c sharp\\crude\\firsttime\\firsttimewebapi\\viewmodel\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\viewmodel\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\c sharp\\crude\\firsttime\\firsttimewebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\c sharp\\crude\\firsttime\\firsttimewebapi\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -56,20 +56,19 @@
               "RelativeDocumentMoniker": "FirstTimeWebAPI\\Services\\UserService.cs",
               "ToolTip": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Services\\UserService.cs",
               "RelativeToolTip": "FirstTimeWebAPI\\Services\\UserService.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAwwD0AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwDsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:20:07.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:20:07.735Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UserView.cs",
               "DocumentMoniker": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\ViewModel\\UserView.cs",
               "RelativeDocumentMoniker": "FirstTimeWebAPI\\ViewModel\\UserView.cs",
               "ToolTip": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\ViewModel\\UserView.cs",
               "RelativeToolTip": "FirstTimeWebAPI\\ViewModel\\UserView.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T07:33:40.97Z",
               "EditorCaption": ""
@@ -84,8 +83,7 @@
               "RelativeToolTip": "FirstTimeWebAPI\\Models\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T20:03:47.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T20:03:47.66Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "FirstTimeWebAPI\\Models\\User.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwBEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:19:52.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:19:52.546Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "FirstTimeWebAPI\\DTO\\UserDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T21:37:31.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T21:37:31.599Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "FirstTimeWebAPI\\Models\\UserType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T07:23:16.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T07:23:16.302Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "FirstTimeWebAPI\\Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T21:07:40.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T21:07:40.099Z"
             },
             {
               "$type": "Document",
@@ -149,21 +143,19 @@
               "RelativeToolTip": "FirstTimeWebAPI\\Repositories\\IuserRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T19:57:22.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T19:57:22.753Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "FirstTimeWebAPI\\Controllers\\UserController.cs",
               "ToolTip": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Controllers\\UserController.cs",
               "RelativeToolTip": "FirstTimeWebAPI\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAmwIgAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAIwIQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:20:45.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:20:45.15Z"
             }
           ]
         }

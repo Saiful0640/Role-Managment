@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using RazorMVC.Models;
+using RazorMVC.ViewModel;
 
 namespace RazorMVC.Services
 {
@@ -16,7 +17,7 @@ namespace RazorMVC.Services
 
         public async Task<User> AddUser(User user)
         {
-            var response = await _httpClient.PostAsJsonAsync("api/user", user);
+            var response = await _httpClient.PostAsJsonAsync("api/User/adduser", user);
 
             if (response.IsSuccessStatusCode)
             {
@@ -31,7 +32,7 @@ namespace RazorMVC.Services
 
         public async Task<bool> UpdateUser( int id,User user)
         {
-            var response = await _httpClient.PutAsJsonAsync($"api/User/{id}", user);
+            var response = await _httpClient.PutAsJsonAsync($"api/User/updateuser/{id}", user);
             if (response.IsSuccessStatusCode)
             {
                 return true;
@@ -43,9 +44,9 @@ namespace RazorMVC.Services
             }
         }
 
-        public async Task<List<User>> GetAllUser()
+        public async Task<List<UserView>> GetAllUser()
         {
-            var userList = await _httpClient.GetAsync("api/user");
+            var userList = await _httpClient.GetAsync("api/User/alluser");
             if (userList == null)
             {
                 var errorMessage = await userList.Content.ReadAsStringAsync();
@@ -54,16 +55,18 @@ namespace RazorMVC.Services
             else
             {
                 var userList1 = await userList.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<List<User>>(userList1);
+                return JsonConvert.DeserializeObject<List<UserView>>(userList1);
             }
         }
 
-      public async Task<User> getuserById(int id)
+        
+
+      public async Task<UserView> getuserById(int id)
        {
-            var response = await _httpClient.GetAsync($"api/User/{id}");
+            var response = await _httpClient.GetAsync($"api/User/getuserbyid/{id}");
             if (response.IsSuccessStatusCode)
             {
-                return await response.Content.ReadFromJsonAsync<User>();
+                return await response.Content.ReadFromJsonAsync<UserView>();
             }
             else
             {
@@ -77,7 +80,7 @@ namespace RazorMVC.Services
         {
             try
             {
-                var response = await _httpClient.DeleteAsync($"api/User/{id}");
+                var response = await _httpClient.DeleteAsync($"api/User/deleteuser/{id}");
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -94,7 +97,49 @@ namespace RazorMVC.Services
             }
         }
 
+        public async Task<List<Role>> GetAllRole()
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"api/user/getallrole");
+                if (response != null)
+                {
+                    return await response.Content.ReadFromJsonAsync<List<Role>>();
+              
+                }
+                else
+                {
+                    return new List<Role>();
+                }
+            }
+            catch (Exception ex)
+            {
+                 throw new Exception(ex.Message);   
+            }
+        }
 
+        public async Task<List<UserType>> GetAllUserType()
+        {
+            try
+            {
+                var reponse = await _httpClient.GetAsync($"api/user/getallUserType");
+                if(reponse != null)
+                {
+
+                    return await reponse.Content.ReadFromJsonAsync<List<UserType>>();
+                }
+                else
+                {
+                    return new List<UserType>();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
+        }
 
     }
 }

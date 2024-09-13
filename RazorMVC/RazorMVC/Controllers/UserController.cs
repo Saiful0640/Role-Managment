@@ -2,6 +2,7 @@
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using RazorMVC.Models;
 using RazorMVC.Services;
+using RazorMVC.ViewModel;
 
 namespace RazorMVC.Controllers
 {
@@ -37,7 +38,7 @@ namespace RazorMVC.Controllers
             {
                 // Log the error (ex)
                 ModelState.AddModelError(string.Empty, "An error occurred while fetching the user list.");
-                return View(new List<User>());  // Return an empty list or handle it in another way
+                return View(new List<UserView>());  // Return an empty list or handle it in another way
             }
         }
 
@@ -45,15 +46,17 @@ namespace RazorMVC.Controllers
         public async Task<IActionResult> SaveUser()
         {
             // Return an empty user model to the view
-            var users = await _userService.GetAllUser();
+            var role = await _userService.GetAllRole();
+            var userType = await _userService.GetAllUserType();
 
-            if (users != null && users.Any())
+            UserViewModel userViewModel = new UserViewModel
             {
-                var firstUser = users.First();
-                return View(firstUser); // Pass the first user to the view
-            }
-
-            return View(new User()); // Return an empty user if the list is empty
+                User = new User(),
+                Roles = role,
+                UserTypes = userType,
+            };
+           
+            return View(userViewModel); // Return an empty user if the list is empty
         }
 
 
@@ -87,6 +90,7 @@ namespace RazorMVC.Controllers
         public async Task<IActionResult> EditUSer(int id)
         {
             var userById = await _userService.getuserById(id);
+
             if (userById == null) { 
                 return NotFound();
             }
@@ -131,6 +135,7 @@ namespace RazorMVC.Controllers
 
                 if (result)
                 {
+                    TempData["SuccessMessage"] = "User deleted successfully!";
                     return RedirectToAction("GetAll");
                 }
                 else
@@ -147,5 +152,24 @@ namespace RazorMVC.Controllers
 
         }
 
+        public async Task<IActionResult> GetUserById(int id)
+        {
+            try
+            {
+                var user = await _userService.getuserById(id);
+                if (user == null)
+                {
+                    return NotFound();
+                }
+
+                return View(user); // Return the user object to the view
+            }
+            catch (Exception ex)
+            {
+                // Handle errors
+                ViewBag.ErrorMessage = ex.Message;
+                return View("Error");
+            }
+        }
     }
 }

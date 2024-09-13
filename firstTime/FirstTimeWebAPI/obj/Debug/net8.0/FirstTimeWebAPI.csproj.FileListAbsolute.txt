@@ -359,3 +359,4 @@ D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTi
 D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\obj\Debug\net8.0\FirstTimeWebAPI.pdb
 D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\obj\Debug\net8.0\FirstTimeWebAPI.genruntimeconfig.cache
 D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\obj\Debug\net8.0\ref\FirstTimeWebAPI.dll
+D:\C sharp\Crude\firstTime\FirstTimeWebAPI\obj\Debug\net8.0\FirstTimeWebAPI.sourcelink.json

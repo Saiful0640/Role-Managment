@@ -1,5 +1,7 @@
-﻿using FirstTimeWebAPI.Models;
+﻿using FirstTimeWebAPI.DTO;
+using FirstTimeWebAPI.Models;
 using FirstTimeWebAPI.Services;
+using FirstTimeWebAPI.Views;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstTimeWebAPI.Controllers
@@ -15,13 +17,13 @@ namespace FirstTimeWebAPI.Controllers
         {
             _userService = userService;
         }
-
-        [HttpGet]
-        public ActionResult<List<User>> AllUser()
+        
+        [HttpGet("alluser")]
+        public ActionResult<List<UserView>> AllUser()
         {
             try
             {
-                List<User> userlist = _userService.getAllUser();
+                List<UserView> userlist = _userService.getAllUser();
                 return Ok(userlist);
             }
             catch (Exception ex)
@@ -29,8 +31,10 @@ namespace FirstTimeWebAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        [HttpPost]
-        public async Task<ActionResult<User>> AddUser([FromBody] User user)
+
+        
+        [HttpPost("adduser")]
+        public async Task<ActionResult<User>> AddUser([FromBody] UserDTO user)
         {
             if (user == null || !ModelState.IsValid)
             {
@@ -48,8 +52,9 @@ namespace FirstTimeWebAPI.Controllers
             }
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateUser(int id, [FromBody] User user)
+        
+        [HttpPut("updateuser/{id}")]
+        public IActionResult UpdateUser(int id, [FromBody] UserDTO user)
         {
             if (user == null || id != user.Id)
             {
@@ -72,8 +77,9 @@ namespace FirstTimeWebAPI.Controllers
             }
         }
 
-        [HttpGet("{id}")]
-        public ActionResult<User> GetUserById(int id)
+       
+        [HttpGet("getuserbyid/{id}")]
+        public ActionResult<UserView> GetUserById(int id)
         {
             try
             {
@@ -90,8 +96,11 @@ namespace FirstTimeWebAPI.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+
+        
         // DELETE: api/UserApi/5
-        [HttpDelete("{id}")]
+        [HttpDelete("deleteuser/{id}")]
         public IActionResult DeleteUser(int id)
         {
             try
@@ -107,6 +116,37 @@ namespace FirstTimeWebAPI.Controllers
             {
                 // Log the exception here if needed
                 return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+       
+        [HttpGet("getallrole")]
+        public ActionResult<List<Role>> GetAllRole()
+        {
+            try
+            {
+                List<Role> roles1 = _userService.GetRoles();
+                return Ok(roles1);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("getallUserType")]
+        public async Task<ActionResult<List<UserType>>> GetallUserType()
+        {
+            try
+            {
+                List<UserType> userTypeList = await _userService.GetAllUserTypes();
+                return Ok(userTypeList);
+
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
 

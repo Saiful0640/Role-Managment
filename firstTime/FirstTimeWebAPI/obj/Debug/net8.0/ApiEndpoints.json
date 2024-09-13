@@ -1,35 +1,15 @@
 [
   {
     "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
-    "Method": "AllUser",
-    "RelativePath": "api/User",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[FirstTimeWebAPI.Models.User, FirstTimeWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
     "Method": "AddUser",
-    "RelativePath": "api/User",
+    "RelativePath": "api/User/adduser",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "user",
-        "Type": "FirstTimeWebAPI.Models.User",
+        "Type": "FirstTimeWebAPI.DTO.UserDTO",
         "IsRequired": true
       }
     ],
@@ -47,42 +27,15 @@
   },
   {
     "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
-    "Method": "UpdateUser",
-    "RelativePath": "api/User/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "user",
-        "Type": "FirstTimeWebAPI.Models.User",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
-    "Method": "GetUserById",
-    "RelativePath": "api/User/{id}",
+    "Method": "AllUser",
+    "RelativePath": "api/User/alluser",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "FirstTimeWebAPI.Models.User",
+        "Type": "System.Collections.Generic.List\u00601[[FirstTimeWebAPI.Views.UserView, FirstTimeWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -95,7 +48,7 @@
   {
     "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
     "Method": "DeleteUser",
-    "RelativePath": "api/User/{id}",
+    "RelativePath": "api/User/deleteuser/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -103,6 +56,93 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
+    "Method": "GetAllRole",
+    "RelativePath": "api/User/getallrole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FirstTimeWebAPI.Models.Role, FirstTimeWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
+    "Method": "GetallUserType",
+    "RelativePath": "api/User/getallUserType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FirstTimeWebAPI.Models.UserType, FirstTimeWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
+    "Method": "GetUserById",
+    "RelativePath": "api/User/getuserbyid/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FirstTimeWebAPI.Views.UserView",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/User/updateuser/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "FirstTimeWebAPI.DTO.UserDTO",
         "IsRequired": true
       }
     ],

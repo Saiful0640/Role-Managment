@@ -9,5 +9,13 @@
         public string Password { get; set; }
         public string PhoneNumber { get; set; }
 
+        // Foreign Key to Role
+        public int RoleId { get; set; }  // Foreign key to Role table
+        public int UserTypeId { get; set; }
+
+        // Navigation Property
+        public Role Role { get; set; }
+        public UserType UserType { get; set; }
+
     }
 }

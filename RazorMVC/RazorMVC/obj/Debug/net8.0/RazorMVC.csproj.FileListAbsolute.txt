@@ -1057,3 +1057,4 @@ D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\RazorMVC\RazorMVC
 D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\RazorMVC\RazorMVC\obj\Debug\net8.0\RazorMVC.pdb
 D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\RazorMVC\RazorMVC\obj\Debug\net8.0\RazorMVC.genruntimeconfig.cache
 D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\RazorMVC\RazorMVC\obj\Debug\net8.0\ref\RazorMVC.dll
+D:\C sharp\Crude\RazorMVC\RazorMVC\obj\Debug\net8.0\RazorMVC.sourcelink.json

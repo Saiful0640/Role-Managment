@@ -129,6 +129,37 @@
   },
   {
     "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
+    "Method": "LoginUser",
+    "RelativePath": "api/User/login/{UserName}/{Password}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FirstTimeWebAPI.Models.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
     "Method": "UpdateUser",
     "RelativePath": "api/User/updateuser/{id}",
     "HttpMethod": "PUT",

@@ -182,9 +182,18 @@ namespace FirstTimeWebAPI.Services
             }
         }
 
-        public Task Login(string UserName, string Password)
+        public async Task<User> Login(string UserName, string Password)
         {
-            throw new NotImplementedException();
+
+            if (string.IsNullOrWhiteSpace(UserName) || string.IsNullOrWhiteSpace(Password))
+            {
+                return null; 
+            }
+
+            User user1 = await _context.Users.SingleOrDefaultAsync(u => u.UserName == UserName && u.Password == Password );
+           
+
+            return user1 ?? new User();
         }
 
         public  List<Role> GetRoles()

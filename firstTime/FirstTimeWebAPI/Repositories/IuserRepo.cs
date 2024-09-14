@@ -13,9 +13,10 @@ namespace FirstTimeWebAPI.Repositories
         public bool deleteUser(int id);
         public bool updateUser(UserDTO user);
 
-        Task Login(string UserName, string Password);
         public List<Role> GetRoles();
         public Task<List<UserType>> GetAllUserTypes();
-         
+
+        Task Login(string UserName, string Password);
+
     }
 }

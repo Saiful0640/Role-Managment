@@ -11,7 +11,7 @@
 
         // Foreign Key to Role
         public int RoleId { get; set; }  // Foreign key to Role table
-        public int UserTypeId { get; set; }
+        public int UserTypeId { get; set; } // Foreign key to UserTyupe table
 
         // Navigation Property
         public Role Role { get; set; }

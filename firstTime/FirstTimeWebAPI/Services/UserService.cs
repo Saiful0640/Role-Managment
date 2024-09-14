@@ -46,7 +46,7 @@ namespace FirstTimeWebAPI.Services
             }
             catch (Exception ex)
             {
-                throw new NotImplementedException();
+                throw new Exception(ex.Message);
             }
             
         }
@@ -178,7 +178,7 @@ namespace FirstTimeWebAPI.Services
             }
             catch (Exception ex)
             {
-                throw new NotImplementedException();
+                throw new Exception(ex.Message);
             }
         }
 

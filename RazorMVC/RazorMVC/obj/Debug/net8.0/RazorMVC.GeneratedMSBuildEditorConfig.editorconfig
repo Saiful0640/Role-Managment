@@ -17,55 +17,63 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RazorMVC
 build_property.RootNamespace = RazorMVC
-build_property.ProjectDir = D:\C sharp\Crude\RazorMVC\RazorMVC\
+build_property.ProjectDir = D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\RazorMVC\RazorMVC\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\C sharp\Crude\RazorMVC\RazorMVC
+build_property.MSBuildProjectDirectory = D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\RazorMVC\RazorMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/C sharp/Crude/RazorMVC/RazorMVC/Views/Home/Index.cshtml]
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C sharp/Crude/RazorMVC/RazorMVC/Views/Home/Privacy.cshtml]
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C sharp/Crude/RazorMVC/RazorMVC/Views/Shared/Error.cshtml]
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C sharp/Crude/RazorMVC/RazorMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C sharp/Crude/RazorMVC/RazorMVC/Views/User/EditUSer.cshtml]
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/User/EditUSer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0VVNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C sharp/Crude/RazorMVC/RazorMVC/Views/User/GetAll.cshtml]
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/User/GetAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxHZXRBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C sharp/Crude/RazorMVC/RazorMVC/Views/User/GetUserById.cshtml]
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/User/GetUserById.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxHZXRVc2VyQnlJZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C sharp/Crude/RazorMVC/RazorMVC/Views/User/SaveUser.cshtml]
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/User/SaveUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTYXZlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C sharp/Crude/RazorMVC/RazorMVC/Views/_ViewImports.cshtml]
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C sharp/Crude/RazorMVC/RazorMVC/Views/_ViewStart.cshtml]
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C sharp/Crude/RazorMVC/RazorMVC/Views/Shared/_Layout.cshtml]
+[D:/SOFTWARE/c sharp/Project/project/core-web-api-and-razor-MVC/RazorMVC/RazorMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-q52q9sbwij

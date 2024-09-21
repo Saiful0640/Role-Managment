@@ -24,7 +24,30 @@ namespace RazorMVC.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Login()
+        {
+            // Return the Login view
+            return View();
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> Login(string userName, string password)
+        {
+            var user = await _userService.LoginService(userName, password);
+
+            if (user != null)
+            {
+                // Handle successful login (e.g., redirect to a different page or show user details)
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                // Handle login failure (e.g., show error message)
+                ModelState.AddModelError("", "Login failed.");
+                return View();
+            }
+        }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -41,6 +64,7 @@ namespace RazorMVC.Controllers
                 return View(new List<UserView>());  // Return an empty list or handle it in another way
             }
         }
+        
 
         [HttpGet]
         public async Task<IActionResult> SaveUser()

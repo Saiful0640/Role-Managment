@@ -19,14 +19,31 @@ namespace FirstTimeWebAPI.Services.SettingServices
             try
             {
                 List<Settings> settings = _context.Settings.ToList();
+
+                return settings;
                 
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
-            throw new NotImplementedException();
+           
         }
 
         public void UpdateSettings(List<Settings> settings)
         {
-            throw new NotImplementedException();
+            
+           foreach(var setting in settings)
+            {
+               var existingSetting = _context.Settings.FirstOrDefault(s=> s.Setting_Key == setting.Setting_Key);
+                if (existingSetting != null)
+                {
+                    existingSetting.Setting_Value = setting.Setting_Value;
+                }
+                else { 
+                
+                 _context.Settings.Add(setting);
+                }
+            }
         }
     }
 }

@@ -34,8 +34,7 @@
               "RelativeToolTip": "FirstTimeWebAPI\\Services\\UserService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T15:56:35.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T15:56:35.607Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "FirstTimeWebAPI\\Services\\SettingServices\\SettingService.cs",
               "ToolTip": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\Services\\SettingServices\\SettingService.cs",
               "RelativeToolTip": "FirstTimeWebAPI\\Services\\SettingServices\\SettingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwCsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T15:46:53.202Z",
               "EditorCaption": ""
@@ -60,8 +59,7 @@
               "RelativeToolTip": "FirstTimeWebAPI\\Repositories\\SeetingRepo\\ISettingRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T15:16:58.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T15:16:58.343Z"
             }
           ]
         }

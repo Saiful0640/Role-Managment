@@ -16,7 +16,8 @@ namespace FirstTimeWebAPI.Repositories
         public List<Role> GetRoles();
         public Task<List<UserType>> GetAllUserTypes();
 
-        public Task<User> Login(string UserName, string Password);
+        public Task<AuthResponse> Login(string UserName, string Password);
+     
 
     }
 }

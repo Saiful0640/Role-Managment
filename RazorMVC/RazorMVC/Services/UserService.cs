@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using RazorMVC.Models;
 using RazorMVC.ViewModel;
+using System.Net.Http.Headers;
 
 namespace RazorMVC.Services
 {
@@ -14,17 +15,19 @@ namespace RazorMVC.Services
             _httpClient = httpClient;
         }
 
-        public async Task<User> LoginService(String UserName, string Password)
+        public async Task<AuthResponse> LoginService(string UserName, string Password)
         {
 
             var response = await _httpClient.PostAsJsonAsync("api/User/login/{UserName}/{Password}", new {});
             if (response.IsSuccessStatusCode)
             {
-              return await response.Content.ReadFromJsonAsync<User>();
+                var authResponse = await response.Content.ReadFromJsonAsync<AuthResponse>();
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResponse.Token);
+                return authResponse;
             }
             else
             {
-                return new User();
+                return null;
             }
         }
         public async Task<User> AddUser(User user)

@@ -151,19 +151,19 @@ namespace FirstTimeWebAPI.Controllers
         }
 
         [HttpPost("login/{UserName}/{Password}")]
-        public async Task<ActionResult<User>> LoginUser(string UserName, string Password)
+        public async Task<IActionResult> LoginUser(string UserName, string Password)
         {
             try
             {
-                User user = await _userService.Login(UserName, Password);
+                var response = await _userService.Login(UserName, Password);
 
-                if (user != null)
+                if (response != null)
                 {
-                    return Ok(user);
+                    return Ok(response);
                 }
                 else {
 
-                    return BadRequest();
+                    return Unauthorized();
                 }
 
             }

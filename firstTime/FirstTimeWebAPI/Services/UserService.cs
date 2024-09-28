@@ -4,6 +4,10 @@ using FirstTimeWebAPI.Models;
 using FirstTimeWebAPI.Repositories;
 using FirstTimeWebAPI.Views;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace FirstTimeWebAPI.Services
 {
@@ -11,11 +15,15 @@ namespace FirstTimeWebAPI.Services
     {
 
         private readonly AppDbContext _context;
+        private readonly IConfiguration _config;
 
-        public UserService(AppDbContext context)
+        public UserService(AppDbContext context, IConfiguration configuration)
         {
             _context = context;
+            _config = configuration;
         }
+
+
 
         public List<UserView> getAllUser()
         {
@@ -182,19 +190,6 @@ namespace FirstTimeWebAPI.Services
             }
         }
 
-        public async Task<User> Login(string UserName, string Password)
-        {
-
-            if (string.IsNullOrWhiteSpace(UserName) || string.IsNullOrWhiteSpace(Password))
-            {
-                return null; 
-            }
-
-            User user1 = await _context.Users.SingleOrDefaultAsync(u => u.UserName == UserName && u.Password == Password );
-           
-
-            return user1 ?? new User();
-        }
 
         public  List<Role> GetRoles()
         {
@@ -233,7 +228,75 @@ namespace FirstTimeWebAPI.Services
             }
             
         }
+
+
+        public async Task<AuthResponse> Login(string UserName, string Password)
+        {
+
+
+            try
+            {
+                User user1 = await _context.Users.SingleOrDefaultAsync(u => u.UserName == UserName && u.Password == Password);
+                Role role = await _context.Roles.SingleOrDefaultAsync(r => r.Id == user1.RoleId);
+                UserType userType = await _context.UserTypes.SingleOrDefaultAsync(t => t.Id == user1.UserTypeId);
+
+                UserView userView = new UserView
+                {
+                    Id = user1.Id,
+                    UserName = user1.UserName,
+                    Password = user1.Password,
+                    Name = user1.UserName,
+                    PhoneNumber = user1.PhoneNumber,
+                    Email = user1.Email,
+                    RoleId = user1.RoleId,
+                    RoleName = role.RoleName,
+                    UserTypeId = user1.UserTypeId,
+                    UserTypeName = userType.TypeName
+                };
+
+                // Generate JWT token
+                string token = GenerateJwtToken(userView);
+
+                return new AuthResponse
+                {
+                    Token = token,
+                    UserDetails = userView
+                };
+
+            }
+            catch (Exception ex) { 
+
+                throw new Exception(ex.Message, ex);
+            }
+           
+        }
+        private string GenerateJwtToken(UserView user)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var claims = new[]
+            {
+            new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(ClaimTypes.Role, user.RoleName)
+        };
+
+            var token = new JwtSecurityToken(
+                issuer: _config["Jwt:Issuer"],
+                audience: _config["Jwt:Audience"],
+                claims: claims,
+                expires: DateTime.Now.AddMinutes(30),
+                signingCredentials: credentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+
+
     }
+
 
 
     

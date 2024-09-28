@@ -360,3 +360,12 @@ D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTi
 D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\obj\Debug\net8.0\FirstTimeWebAPI.genruntimeconfig.cache
 D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\obj\Debug\net8.0\ref\FirstTimeWebAPI.dll
 D:\C sharp\Crude\firstTime\FirstTimeWebAPI\obj\Debug\net8.0\FirstTimeWebAPI.sourcelink.json
+D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

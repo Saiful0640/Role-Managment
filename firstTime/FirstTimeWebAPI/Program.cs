@@ -1,10 +1,36 @@
 using FirstTimeWebAPI.ConfigModel;
-using FirstTimeWebAPI.Repositories;
 using FirstTimeWebAPI.Services;
+<<<<<<< HEAD
 using FirstTimeWebAPI.Services.SettingServices;
+=======
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+>>>>>>> 3ac25e3758825af8081de0e13ebd8ce711b31bdd
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+//JWT Token auth
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+  .AddJwtBearer(options =>
+  {
+      options.TokenValidationParameters = new TokenValidationParameters
+      {
+          ValidateIssuer = true,
+          ValidateAudience = true,
+          ValidateLifetime = true,
+          ValidateIssuerSigningKey = true,
+          ValidIssuer = builder.Configuration["Jwt:Issuer"],
+          ValidAudience = builder.Configuration["Jwt:Audience"],
+          IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+      };
+  });
 
 //allservice
 builder.Services.AddScoped<UserService>();
@@ -13,6 +39,8 @@ builder.Services.AddScoped<SettingService>();
 
 // Add services to the container.
 builder.Services.AddControllers();
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -46,7 +74,10 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowAllOrigins");
 app.UseHttpsRedirection();
 
+app.UseAuthentication(); 
 app.UseAuthorization();
+
+
 
 app.MapControllers();
 

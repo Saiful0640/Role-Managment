@@ -1,5 +1,10 @@
 ﻿using FirstTimeWebAPI.Models;
+<<<<<<< HEAD
 using FirstTimeWebAPI.Models.Config;
+=======
+
+ 
+>>>>>>> 3ac25e3758825af8081de0e13ebd8ce711b31bdd
 using Microsoft.EntityFrameworkCore;
 
 namespace FirstTimeWebAPI.ConfigModel
@@ -14,7 +19,12 @@ namespace FirstTimeWebAPI.ConfigModel
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserType> UserTypes { get; set; }
+<<<<<<< HEAD
         public DbSet<Settings> Settings { get; set; }
+=======
+
+
+>>>>>>> 3ac25e3758825af8081de0e13ebd8ce711b31bdd
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

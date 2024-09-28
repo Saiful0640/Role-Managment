@@ -1,49 +1,68 @@
 ﻿using FirstTimeWebAPI.ConfigModel;
 using FirstTimeWebAPI.Models.Config;
 using FirstTimeWebAPI.Repositories.SeetingRepo;
+using Microsoft.EntityFrameworkCore;
 
 namespace FirstTimeWebAPI.Services.SettingServices
 {
     public class SettingService : ISettingRepo
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext _appDbContext;
 
-        public SettingService(AppDbContext context) {
-
-            _context = context;
+        public SettingService(AppDbContext appDbContext)
+        {
+            _appDbContext = appDbContext;
         }
 
-        public  List<Settings> GetSettings()
+        public async Task<List<Settings>> GetAllSettingAsync(string category)
         {
-
             try
             {
-                List<Settings> settings = _context.Settings.ToList();
-
-                return settings;
                 
-            }catch (Exception ex)
+
+                return await _appDbContext.Settings
+                .Where(s => s.Setting_Key.StartsWith(category))
+                .ToListAsync();
+               
+            }
+            catch(Exception ex)
             {
                 throw new Exception(ex.Message);
             }
-           
+
         }
 
-        public void UpdateSettings(List<Settings> settings)
+        public async Task SaveAndUpdateGetAllSettingAsync(string key, string value)
         {
-            
-           foreach(var setting in settings)
+            try
             {
-               var existingSetting = _context.Settings.FirstOrDefault(s=> s.Setting_Key == setting.Setting_Key);
-                if (existingSetting != null)
-                {
-                    existingSetting.Setting_Value = setting.Setting_Value;
-                }
-                else { 
                 
-                 _context.Settings.Add(setting);
+                var setting = await _appDbContext.Settings.FirstOrDefaultAsync(s => s.Setting_Key == key);
+
+
+                if (setting == null)
+                {
+                    setting = new Settings
+                    {
+                        Setting_Key = key,
+                        Setting_Value = value
+
+                    };
+
+                    await _appDbContext.AddAsync(setting);
                 }
+                else
+                {
+                    setting.Setting_Value = value;
+                    
+                }
+                await _appDbContext.SaveChangesAsync();
             }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message, ex);
+            }
+            
         }
     }
 }

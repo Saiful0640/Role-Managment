@@ -1,12 +1,14 @@
 using FirstTimeWebAPI.ConfigModel;
 using FirstTimeWebAPI.Repositories;
 using FirstTimeWebAPI.Services;
+using FirstTimeWebAPI.Services.SettingServices;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 //allservice
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<SettingService>();
 
 
 // Add services to the container.

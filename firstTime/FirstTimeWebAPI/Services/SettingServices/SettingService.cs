@@ -1,5 +1,5 @@
 ﻿using FirstTimeWebAPI.ConfigModel;
-using FirstTimeWebAPI.Models.Config;
+using FirstTimeWebAPI.Models.Settings;
 using FirstTimeWebAPI.Repositories.SeetingRepo;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,7 +19,6 @@ namespace FirstTimeWebAPI.Services.SettingServices
             try
             {
                 
-
                 return await _appDbContext.Settings
                 .Where(s => s.Setting_Key.StartsWith(category))
                 .ToListAsync();

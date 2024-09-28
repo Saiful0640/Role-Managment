@@ -1,6 +1,7 @@
-﻿using FirstTimeWebAPI.Models.Config;
+﻿
+using FirstTimeWebAPI.Models.Settings;
 using FirstTimeWebAPI.Services.SettingServices;
-using Microsoft.AspNetCore.Http;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstTimeWebAPI.Controllers.Setting

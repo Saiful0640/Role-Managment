@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "FirstTimeWebAPI.Controllers.Setting.SettingController",
+    "Method": "SaveOrUpdateSetting",
+    "RelativePath": "api/Setting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateSetting",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
     "Method": "AddUser",
     "RelativePath": "api/User/adduser",
@@ -168,5 +184,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FirstTimeWebAPI.Controllers.Setting.SettingController",
+    "Method": "GetAllSettings",
+    "RelativePath": "category/{category}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FirstTimeWebAPI.Models.Settings.Settings, FirstTimeWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

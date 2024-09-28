@@ -1,4 +1,6 @@
-﻿using FirstTimeWebAPI.Models.Config;
+﻿
+
+using FirstTimeWebAPI.Models.Settings;
 
 namespace FirstTimeWebAPI.Repositories.SeetingRepo
 {

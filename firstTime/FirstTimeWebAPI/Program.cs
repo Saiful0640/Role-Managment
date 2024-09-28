@@ -1,10 +1,10 @@
 using FirstTimeWebAPI.ConfigModel;
 using FirstTimeWebAPI.Services;
-<<<<<<< HEAD
+
 using FirstTimeWebAPI.Services.SettingServices;
-=======
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
->>>>>>> 3ac25e3758825af8081de0e13ebd8ce711b31bdd
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;

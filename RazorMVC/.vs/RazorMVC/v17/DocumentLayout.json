@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\C sharp\\Crude\\RazorMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|d:\\c sharp\\crude\\razormvc\\razormvc\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|solutionrelative:razormvc\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|d:\\c sharp\\crude\\razormvc\\razormvc\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|solutionrelative:razormvc\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|d:\\c sharp\\crude\\razormvc\\razormvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|solutionrelative:razormvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|d:\\c sharp\\crude\\razormvc\\razormvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|solutionrelative:razormvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|d:\\c sharp\\crude\\razormvc\\razormvc\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|solutionrelative:razormvc\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|d:\\c sharp\\crude\\razormvc\\razormvc\\viewmodel\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|solutionrelative:razormvc\\views\\user\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|d:\\c sharp\\crude\\razormvc\\razormvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|solutionrelative:razormvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|d:\\c sharp\\crude\\razormvc\\razormvc\\wwwroot\\css\\login.css||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE205451-3675-495E-888D-62BD9EAF7664}|RazorMVC\\RazorMVC.csproj|solutionrelative:razormvc\\wwwroot\\css\\login.css||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 221,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AuthResponse.cs",
               "DocumentMoniker": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\Models\\AuthResponse.cs",
               "RelativeDocumentMoniker": "RazorMVC\\Models\\AuthResponse.cs",
@@ -58,12 +58,11 @@
               "RelativeToolTip": "RazorMVC\\Models\\AuthResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T16:34:14.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-27T16:34:14.112Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\Program.cs",
               "RelativeDocumentMoniker": "RazorMVC\\Program.cs",
@@ -71,12 +70,11 @@
               "RelativeToolTip": "RazorMVC\\Program.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T15:55:01.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T15:55:01.936Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\appsettings.json",
               "RelativeDocumentMoniker": "RazorMVC\\appsettings.json",
@@ -84,11 +82,12 @@
               "RelativeToolTip": "RazorMVC\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-25T15:54:54.077Z"
+              "WhenOpened": "2024-09-25T15:54:54.077Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GetAll.cshtml",
               "DocumentMoniker": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\Views\\User\\GetAll.cshtml",
               "RelativeDocumentMoniker": "RazorMVC\\Views\\User\\GetAll.cshtml",
@@ -96,12 +95,11 @@
               "RelativeToolTip": "RazorMVC\\Views\\User\\GetAll.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T09:59:13.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T09:59:13.375Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UserViewModel.cs",
               "DocumentMoniker": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\ViewModel\\UserViewModel.cs",
               "RelativeDocumentMoniker": "RazorMVC\\ViewModel\\UserViewModel.cs",
@@ -109,8 +107,7 @@
               "RelativeToolTip": "RazorMVC\\ViewModel\\UserViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T09:58:02.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T09:58:02.986Z"
             },
             {
               "$type": "Document",
@@ -126,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\Views\\User\\Login.cshtml",
               "RelativeDocumentMoniker": "RazorMVC\\Views\\User\\Login.cshtml",
@@ -145,20 +142,20 @@
               "RelativeDocumentMoniker": "RazorMVC\\Controllers\\UserController.cs",
               "ToolTip": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\Controllers\\UserController.cs",
               "RelativeToolTip": "RazorMVC\\Controllers\\UserController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAywCQAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwC8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-15T08:47:52.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "RazorMVC\\Services\\UserService.cs",
               "ToolTip": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\Services\\UserService.cs",
               "RelativeToolTip": "RazorMVC\\Services\\UserService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBQAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-15T08:42:04.31Z",
               "EditorCaption": ""

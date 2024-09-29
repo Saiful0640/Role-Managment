@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\software\\c sharp\\project\\project\\core-web-api-and-razor-mvc\\firsttime\\firsttimewebapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\software\\c sharp\\project\\project\\core-web-api-and-razor-mvc\\firsttime\\firsttimewebapi\\controllers\\setting\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\controllers\\setting\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\software\\c sharp\\project\\project\\core-web-api-and-razor-mvc\\firsttime\\firsttimewebapi\\services\\settingservices\\settingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\services\\settingservices\\settingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\software\\c sharp\\project\\project\\core-web-api-and-razor-mvc\\firsttime\\firsttimewebapi\\controllers\\setting\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\controllers\\setting\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\software\\c sharp\\project\\project\\core-web-api-and-razor-mvc\\firsttime\\firsttimewebapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\software\\c sharp\\project\\project\\core-web-api-and-razor-mvc\\firsttime\\firsttimewebapi\\repositories\\seeting\\isettingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\repositories\\seeting\\isettingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\software\\c sharp\\project\\project\\core-web-api-and-razor-mvc\\firsttime\\firsttimewebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\software\\c sharp\\project\\project\\core-web-api-and-razor-mvc\\firsttime\\firsttimewebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|solutionrelative:firsttimewebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4272C547-E683-4C1C-888C-42E1279DE915}|FirstTimeWebAPI\\FirstTimeWebAPI.csproj|d:\\software\\c sharp\\project\\project\\core-web-api-and-razor-mvc\\firsttime\\firsttimewebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,44 +38,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "FirstTimeWebAPI\\Services\\UserService.cs",
               "ToolTip": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\Services\\UserService.cs",
               "RelativeToolTip": "FirstTimeWebAPI\\Services\\UserService.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T08:13:41.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "FirstTimeWebAPI\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\Controllers\\UserController.cs",
-              "RelativeToolTip": "FirstTimeWebAPI\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T05:20:48.674Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "FirstTimeWebAPI\\appsettings.json",
-              "ToolTip": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\appsettings.json",
-              "RelativeToolTip": "FirstTimeWebAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-28T04:26:12.319Z"
+              "WhenOpened": "2024-09-28T08:13:41.446Z"
             },
             {
               "$type": "Document",
@@ -93,10 +60,9 @@
               "RelativeDocumentMoniker": "FirstTimeWebAPI\\Services\\SettingServices\\SettingService.cs",
               "ToolTip": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\Services\\SettingServices\\SettingService.cs",
               "RelativeToolTip": "FirstTimeWebAPI\\Services\\SettingServices\\SettingService.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAACYAAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T04:20:01.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T04:20:01.625Z"
             },
             {
               "$type": "Document",
@@ -112,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Settings.cs",
               "DocumentMoniker": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\Models\\Settings\\Settings.cs",
               "RelativeDocumentMoniker": "FirstTimeWebAPI\\Models\\Settings\\Settings.cs",
@@ -124,20 +90,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SettingController.cs",
               "DocumentMoniker": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\Controllers\\Setting\\SettingController.cs",
               "RelativeDocumentMoniker": "FirstTimeWebAPI\\Controllers\\Setting\\SettingController.cs",
               "ToolTip": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\Controllers\\Setting\\SettingController.cs",
               "RelativeToolTip": "FirstTimeWebAPI\\Controllers\\Setting\\SettingController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAABqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T04:15:30.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\Program.cs",
               "RelativeDocumentMoniker": "FirstTimeWebAPI\\Program.cs",
@@ -149,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\ConfigModel\\AppDbContext.cs",
               "RelativeDocumentMoniker": "FirstTimeWebAPI\\ConfigModel\\AppDbContext.cs",

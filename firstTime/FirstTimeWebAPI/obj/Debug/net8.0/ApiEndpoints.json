@@ -1,21 +1,5 @@
 [
   {
-    "ContainingType": "FirstTimeWebAPI.Controllers.Setting.SettingController",
-    "Method": "SaveOrUpdateSetting",
-    "RelativePath": "api/Setting",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "updateSetting",
-        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "FirstTimeWebAPI.Controllers.UserController",
     "Method": "AddUser",
     "RelativePath": "api/User/adduser",
@@ -210,5 +194,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "FirstTimeWebAPI.Controllers.Setting.SettingController",
+    "Method": "SaveOrUpdateSetting",
+    "RelativePath": "SettingSave",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateSetting",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

@@ -26,7 +26,7 @@ namespace FirstTimeWebAPI.Controllers.Setting
 
         }
 
-        [HttpPost]
+        [HttpPost("/SettingSave")]
         public async Task<IActionResult> SaveOrUpdateSetting( [FromBody] Dictionary<string, string> updateSetting)
         {
 

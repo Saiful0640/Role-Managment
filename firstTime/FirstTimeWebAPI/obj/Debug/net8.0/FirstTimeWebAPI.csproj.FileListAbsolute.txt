@@ -369,3 +369,12 @@ D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityMo
 D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\C sharp\Crude\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\SOFTWARE\c sharp\Project\project\core-web-api-and-razor-MVC\firstTime\FirstTimeWebAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

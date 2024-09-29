@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FirstTimeWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ed5d028c69b86e7b933aeda923782e0c6c3300c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71ece43b5f442a638e5590c08e57f7c749c30705")]
 [assembly: System.Reflection.AssemblyProductAttribute("FirstTimeWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FirstTimeWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

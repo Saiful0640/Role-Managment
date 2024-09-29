@@ -1,6 +1,10 @@
 using FirstTimeWebAPI.ConfigModel;
 using FirstTimeWebAPI.Services;
+
+using FirstTimeWebAPI.Services.SettingServices;
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -30,6 +34,7 @@ builder.Services.AddAuthentication(options =>
 
 //allservice
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<SettingService>();
 
 
 // Add services to the container.

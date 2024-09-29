@@ -1,6 +1,5 @@
 ﻿using FirstTimeWebAPI.Models;
-
- 
+using FirstTimeWebAPI.Models.Settings;
 using Microsoft.EntityFrameworkCore;
 
 namespace FirstTimeWebAPI.ConfigModel
@@ -15,6 +14,8 @@ namespace FirstTimeWebAPI.ConfigModel
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserType> UserTypes { get; set; }
+        public DbSet<Settings> Settings { get; set; }
+
 
 
 

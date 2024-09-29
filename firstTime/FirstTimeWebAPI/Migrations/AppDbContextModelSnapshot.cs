@@ -18,25 +18,6 @@ namespace FirstTimeWebAPI.Migrations
                 .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("FirstTimeWebAPI.Models.Config.Settings", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("Setting_Key")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Setting_Value")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Settings");
-                });
-
             modelBuilder.Entity("FirstTimeWebAPI.Models.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -62,6 +43,25 @@ namespace FirstTimeWebAPI.Migrations
                             Id = 2,
                             RoleName = "User"
                         });
+                });
+
+            modelBuilder.Entity("FirstTimeWebAPI.Models.Settings.Settings", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Setting_Key")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Setting_Value")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Settings");
                 });
 
             modelBuilder.Entity("FirstTimeWebAPI.Models.User", b =>

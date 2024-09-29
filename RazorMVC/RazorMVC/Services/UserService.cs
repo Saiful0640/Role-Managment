@@ -18,7 +18,7 @@ namespace RazorMVC.Services
         public async Task<AuthResponse> LoginService(string UserName, string Password)
         {
 
-            var response = await _httpClient.PostAsJsonAsync("api/User/login/{UserName}/{Password}", new {});
+            var response = await _httpClient.PostAsJsonAsync($"api/User/login/{UserName}/{Password}", new {});
             if (response.IsSuccessStatusCode)
             {
                 var authResponse = await response.Content.ReadFromJsonAsync<AuthResponse>();

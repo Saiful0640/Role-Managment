@@ -4337,19 +4337,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AE\\.nuget\\packages\\": {}
+    "C:\\Users\\saiful Islam\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\FirstTimeWebAPI.csproj",
+      "projectUniqueName": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\FirstTimeWebAPI.csproj",
       "projectName": "FirstTimeWebAPI",
-      "projectPath": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\FirstTimeWebAPI.csproj",
-      "packagesPath": "C:\\Users\\AE\\.nuget\\packages\\",
-      "outputPath": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\firstTime\\FirstTimeWebAPI\\obj\\",
+      "projectPath": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\FirstTimeWebAPI.csproj",
+      "packagesPath": "C:\\Users\\saiful Islam\\.nuget\\packages\\",
+      "outputPath": "D:\\C sharp\\Crude\\firstTime\\FirstTimeWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\saiful Islam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4427,7 +4427,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

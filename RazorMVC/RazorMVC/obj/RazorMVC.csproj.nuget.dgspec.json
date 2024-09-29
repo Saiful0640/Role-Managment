@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\RazorMVC\\RazorMVC\\RazorMVC.csproj": {}
+    "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\RazorMVC.csproj": {}
   },
   "projects": {
-    "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\RazorMVC\\RazorMVC\\RazorMVC.csproj": {
+    "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\RazorMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\RazorMVC\\RazorMVC\\RazorMVC.csproj",
+        "projectUniqueName": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\RazorMVC.csproj",
         "projectName": "RazorMVC",
-        "projectPath": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\RazorMVC\\RazorMVC\\RazorMVC.csproj",
-        "packagesPath": "C:\\Users\\AE\\.nuget\\packages\\",
-        "outputPath": "D:\\SOFTWARE\\c sharp\\Project\\project\\core-web-api-and-razor-MVC\\RazorMVC\\RazorMVC\\obj\\",
+        "projectPath": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\RazorMVC.csproj",
+        "packagesPath": "C:\\Users\\saiful Islam\\.nuget\\packages\\",
+        "outputPath": "D:\\C sharp\\Crude\\RazorMVC\\RazorMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\saiful Islam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

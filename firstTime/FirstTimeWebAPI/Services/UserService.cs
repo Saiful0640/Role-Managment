@@ -230,16 +230,23 @@ namespace FirstTimeWebAPI.Services
         }
 
 
-        public async Task<AuthResponse> Login(string UserName, string Password)
+        public async Task<AuthResponse> Login(string userName, string password)
         {
-
 
             try
             {
-                User user1 = await _context.Users.SingleOrDefaultAsync(u => u.UserName == UserName && u.Password == Password);
+                User user1 = await _context.Users
+                    .SingleOrDefaultAsync(u => u.UserName == userName && u.Password == password);
+
+                if (user1 == null)
+                {
+                    return null; 
+                }
+
                 Role role = await _context.Roles.SingleOrDefaultAsync(r => r.Id == user1.RoleId);
                 UserType userType = await _context.UserTypes.SingleOrDefaultAsync(t => t.Id == user1.UserTypeId);
 
+                // Construct UserView object
                 UserView userView = new UserView
                 {
                     Id = user1.Id,
@@ -249,9 +256,9 @@ namespace FirstTimeWebAPI.Services
                     PhoneNumber = user1.PhoneNumber,
                     Email = user1.Email,
                     RoleId = user1.RoleId,
-                    RoleName = role.RoleName,
+                    RoleName = role?.RoleName, // Use null-conditional operator
                     UserTypeId = user1.UserTypeId,
-                    UserTypeName = userType.TypeName
+                    UserTypeName = userType?.TypeName // Use null-conditional operator
                 };
 
                 // Generate JWT token
@@ -262,13 +269,12 @@ namespace FirstTimeWebAPI.Services
                     Token = token,
                     UserDetails = userView
                 };
-
             }
-            catch (Exception ex) { 
-
+            catch (Exception ex)
+            {
                 throw new Exception(ex.Message, ex);
             }
-           
+
         }
         private string GenerateJwtToken(UserView user)
         {

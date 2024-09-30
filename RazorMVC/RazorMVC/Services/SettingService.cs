@@ -16,7 +16,7 @@ namespace RazorMVC.Services
 
         public async Task<List<Settings>> GetSettingsByCategoryAsync(string category)
         {
-            var response= await _httpCLient.GetAsync($"api/Setting/category/test{category}");
+            var response= await _httpCLient.GetAsync($"category/test{category}");
 
             if (response.IsSuccessStatusCode)
             {
@@ -56,7 +56,7 @@ namespace RazorMVC.Services
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             // Adjust URL to the correct API endpoint
-            var response = await _httpCLient.PostAsync("api/Setting/SettingSave", content);
+            var response = await _httpCLient.PostAsync("/SettingSave", content);
 
             // Ensure successful status code
             response.EnsureSuccessStatusCode();

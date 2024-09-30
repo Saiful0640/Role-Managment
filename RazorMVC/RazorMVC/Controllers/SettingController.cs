@@ -58,7 +58,8 @@ namespace RazorMVC.Controllers
                 await _settingService.SaveOrUpdateSettingAsync(setting.Key, setting.Value);
             }
 
-            return RedirectToAction("Index", new { category = category });
+          //  return RedirectToAction("Index", new { category = category });
+            return RedirectToAction("CompanyProfile", new { category = category });
         }
 
 

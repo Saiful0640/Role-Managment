@@ -16,6 +16,12 @@ builder.Services.AddHttpClient<UserService>(client =>
     var apiSettings = serviceProvider.GetRequiredService<IOptions<ApiSettings>>().Value;
     client.BaseAddress = new Uri(apiSettings.BaseUrl);
 });
+builder.Services.AddHttpClient<SettingService>(client =>
+{
+    var serviceProvider = builder.Services.BuildServiceProvider();
+    var apiSettings = serviceProvider.GetRequiredService<IOptions<ApiSettings>>().Value;
+    client.BaseAddress = new Uri(apiSettings.BaseUrl);
+});
 
 var app = builder.Build();
 

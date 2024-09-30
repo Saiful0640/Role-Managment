@@ -32,9 +32,9 @@ namespace RazorMVC.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(string userName, string password)
+        public async Task<IActionResult> Login(string UserName, string password)
         {
-            var user = await _userService.LoginService(userName, password);
+            var user = await _userService.LoginService(UserName, password);
 
             if (user != null)
             {

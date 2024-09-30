@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
+using Newtonsoft.Json;
 using RazorMVC.Models;
 using RazorMVC.ViewModel;
 using System.Net.Http.Headers;
@@ -18,17 +19,27 @@ namespace RazorMVC.Services
         public async Task<AuthResponse> LoginService(string UserName, string Password)
         {
 
-            var response = await _httpClient.PostAsJsonAsync($"api/User/login/{UserName}/{Password}", new {});
-            if (response.IsSuccessStatusCode)
+            try
             {
-                var authResponse = await response.Content.ReadFromJsonAsync<AuthResponse>();
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResponse.Token);
-                return authResponse;
+                var response = await _httpClient.PostAsJsonAsync($"api/User/login/{UserName}/{Password}", new { });
+                if (response.IsSuccessStatusCode)
+                {
+                    var authResponse = await response.Content.ReadFromJsonAsync<AuthResponse>();
+                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResponse.Token);
+                    return authResponse;
+                }
+                else
+                {
+                    Console.WriteLine($"Error: {response.StatusCode}, {await response.Content.ReadAsStringAsync()}");
+                    return null;
+                }
             }
-            else
+            catch (Exception ex)
             {
+                Console.WriteLine($"Exception: {ex.Message}");
                 return null;
             }
+
         }
         public async Task<User> AddUser(User user)
         {

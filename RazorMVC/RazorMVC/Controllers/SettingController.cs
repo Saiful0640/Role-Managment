@@ -59,7 +59,7 @@ namespace RazorMVC.Controllers
             }
 
           //  return RedirectToAction("Index", new { category = category });
-            return RedirectToAction("CompanyProfile", new { category = category });
+            return RedirectToAction("GetAllSetting", new { category = category });
         }
 
 
@@ -88,7 +88,7 @@ namespace RazorMVC.Controllers
         {
             return category switch
             {
-                "CompanyProfile" => "CompanyProfile",
+                "CompanyProfile" => "CompanyProfileSetting",// this part is the view name
                 "Email" => "EmailSetting",
 
                 _ => "Settings" // Default view name if category doesn't match
